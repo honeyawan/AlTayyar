@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ATMoviesTableViewCell: UITableViewCell {
 
@@ -21,13 +22,15 @@ class ATMoviesTableViewCell: UITableViewCell {
     
     func setIdentifier(_ identifier : String) {
         
-        viewModel = ATMovieListViewModel(movieIdentifier: identifier)
         collectionView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
+        viewModel = ATMovieListViewModel(movieIdentifier: identifier)
+        getMoreMovies()
     }
     
     func getMoreMovies(){
+        
         viewModel.fetchMovies { (success) in
-            collectionView.reloadData()
+            self.collectionView.reloadData()
         }
 
     }
@@ -47,9 +50,11 @@ extension ATMoviesTableViewCell : UICollectionViewDelegate,UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: collectionCellID, for: indexPath) as! ATMoviesCollectionViewCell
-        
-        //       let imageID = viewModel.imageForMovieAtIndexPath(indexPath: indexPath)
-        //        cell.imageView
+        cell.imageView.image = nil
+        let imageID = viewModel.imageForMovieAtIndexPath(indexPath: indexPath)
+        if let url = URL.init(string: imageID) {
+            cell.imageView.af_setImage(withURL: url)
+        }
         return cell
     }
     

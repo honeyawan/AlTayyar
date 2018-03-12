@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A9E0DEFA690F43577D57A1C /* Pods_AlTayyar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED70497F050CC83C7149B9F5 /* Pods_AlTayyar.framework */; };
+		A3C545CC54C7D9DB3E177612 /* Pods_AlTayyarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E836DBCBE78E6CECE2B9C3 /* Pods_AlTayyarUITests.framework */; };
+		AE5DF3083DDB21235DFCAE71 /* Pods_AlTayyarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A9D041A1A96DC845E87D96 /* Pods_AlTayyarTests.framework */; };
 		BE79A3D220568BEC00415404 /* ATMoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */; };
 		BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */; };
 		BE79A3D6205692EA00415404 /* ATMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */; };
 		BE79A3D8205697E800415404 /* ATMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D7205697E800415404 /* ATMoviesCollectionViewCell.swift */; };
 		BE79A3DA20569EBB00415404 /* ATAPIConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */; };
 		BE79A3DC20569EDD00415404 /* ATFetchMoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */; };
+		BE79A3DE2056BA6900415404 /* ATConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DD2056BA6900415404 /* ATConfigurationViewModel.swift */; };
+		BE79A3E02056C0D200415404 /* ATAPPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DF2056C0D200415404 /* ATAPPConfiguration.swift */; };
+		BE79A3E62056DA4E00415404 /* MovieListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3E32056DA4E00415404 /* MovieListViewControllerTests.swift */; };
+		BE79A3E72056DA4E00415404 /* SplashViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3E42056DA4E00415404 /* SplashViewControllerTests.swift */; };
+		BE79A3E82056DA4E00415404 /* MovieDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3E52056DA4E00415404 /* MovieDetailViewControllerTests.swift */; };
+		BE79A3EC2056DB0F00415404 /* ConfigurationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3E92056DB0F00415404 /* ConfigurationViewModelTests.swift */; };
+		BE79A3ED2056DB0F00415404 /* MovieDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3EA2056DB0F00415404 /* MovieDetailViewModelTests.swift */; };
+		BE79A3EE2056DB0F00415404 /* MovieListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3EB2056DB0F00415404 /* MovieListViewModelTests.swift */; };
+		BE79A3F02056DB5200415404 /* MovieCategoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3EF2056DB5200415404 /* MovieCategoryViewModelTests.swift */; };
 		BE824B782056740300528CB9 /* ATAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B772056740300528CB9 /* ATAPIConfiguration.swift */; };
 		BE824B7A2056766F00528CB9 /* ATMovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B792056766F00528CB9 /* ATMovieEntity.swift */; };
 		BE824B7C205678B400528CB9 /* ATMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B7B205678B400528CB9 /* ATMoviesTableViewCell.swift */; };
@@ -44,12 +56,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FF13673463EC4FFD7A80EDE /* Pods-AlTayyarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyarTests/Pods-AlTayyarTests.release.xcconfig"; sourceTree = "<group>"; };
+		17C3E58CBC6B40F58DF0D12B /* Pods-AlTayyarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyarTests/Pods-AlTayyarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		28A9D041A1A96DC845E87D96 /* Pods_AlTayyarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlTayyarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		691B58B955375F0CB0BEE1EA /* Pods-AlTayyar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyar/Pods-AlTayyar.debug.xcconfig"; sourceTree = "<group>"; };
+		B3E836DBCBE78E6CECE2B9C3 /* Pods_AlTayyarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlTayyarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesDetailViewController.swift; sourceTree = "<group>"; };
 		BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMovieCategoryViewModel.swift; sourceTree = "<group>"; };
 		BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieListViewModel.swift; sourceTree = "<group>"; };
 		BE79A3D7205697E800415404 /* ATMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIConfigurationService.swift; sourceTree = "<group>"; };
 		BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFetchMoviesService.swift; sourceTree = "<group>"; };
+		BE79A3DD2056BA6900415404 /* ATConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATConfigurationViewModel.swift; sourceTree = "<group>"; };
+		BE79A3DF2056C0D200415404 /* ATAPPConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATAPPConfiguration.swift; sourceTree = "<group>"; };
+		BE79A3E32056DA4E00415404 /* MovieListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewControllerTests.swift; sourceTree = "<group>"; };
+		BE79A3E42056DA4E00415404 /* SplashViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewControllerTests.swift; sourceTree = "<group>"; };
+		BE79A3E52056DA4E00415404 /* MovieDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewControllerTests.swift; sourceTree = "<group>"; };
+		BE79A3E92056DB0F00415404 /* ConfigurationViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewModelTests.swift; sourceTree = "<group>"; };
+		BE79A3EA2056DB0F00415404 /* MovieDetailViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModelTests.swift; sourceTree = "<group>"; };
+		BE79A3EB2056DB0F00415404 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
+		BE79A3EF2056DB5200415404 /* MovieCategoryViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCategoryViewModelTests.swift; sourceTree = "<group>"; };
 		BE824B772056740300528CB9 /* ATAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIConfiguration.swift; sourceTree = "<group>"; };
 		BE824B792056766F00528CB9 /* ATMovieEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieEntity.swift; sourceTree = "<group>"; };
 		BE824B7B205678B400528CB9 /* ATMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMoviesTableViewCell.swift; sourceTree = "<group>"; };
@@ -67,6 +93,10 @@
 		BEA2D9302056547E00D7544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA2D944205655C000D7544A /* ATSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATSplashViewController.swift; sourceTree = "<group>"; };
 		BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesListViewController.swift; sourceTree = "<group>"; };
+		C3AE940DDE2A3E3AFBCBC037 /* Pods-AlTayyarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyarUITests/Pods-AlTayyarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ED70497F050CC83C7149B9F5 /* Pods_AlTayyar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlTayyar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3706181E58CFA93AE97CA8E /* Pods-AlTayyarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyarUITests/Pods-AlTayyarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA50E4D0A46D1D9A82A4DC00 /* Pods-AlTayyar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyar.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyar/Pods-AlTayyar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9E0DEFA690F43577D57A1C /* Pods_AlTayyar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5DF3083DDB21235DFCAE71 /* Pods_AlTayyarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +120,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C545CC54C7D9DB3E177612 /* Pods_AlTayyarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4C90A761F98D2B2BDA01E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED70497F050CC83C7149B9F5 /* Pods_AlTayyar.framework */,
+				28A9D041A1A96DC845E87D96 /* Pods_AlTayyarTests.framework */,
+				B3E836DBCBE78E6CECE2B9C3 /* Pods_AlTayyarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE79A3E12056D9D900415404 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE79A3EF2056DB5200415404 /* MovieCategoryViewModelTests.swift */,
+				BE79A3EA2056DB0F00415404 /* MovieDetailViewModelTests.swift */,
+				BE79A3EB2056DB0F00415404 /* MovieListViewModelTests.swift */,
+				BE79A3E92056DB0F00415404 /* ConfigurationViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		BE79A3E22056D9D900415404 /* ViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE79A3E52056DA4E00415404 /* MovieDetailViewControllerTests.swift */,
+				BE79A3E32056DA4E00415404 /* MovieListViewControllerTests.swift */,
+				BE79A3E42056DA4E00415404 /* SplashViewControllerTests.swift */,
+			);
+			path = ViewControllerTests;
+			sourceTree = "<group>";
+		};
 		BEA2D9022056547E00D7544A = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +165,8 @@
 				BEA2D9222056547E00D7544A /* AlTayyarTests */,
 				BEA2D92D2056547E00D7544A /* AlTayyarUITests */,
 				BEA2D90C2056547E00D7544A /* Products */,
+				C8A7AFD488CFD24FDCCA0556 /* Pods */,
+				4A4C90A761F98D2B2BDA01E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +209,8 @@
 		BEA2D92D2056547E00D7544A /* AlTayyarUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BE79A3E22056D9D900415404 /* ViewControllerTests */,
+				BE79A3E12056D9D900415404 /* ViewModelTests */,
 				BEA2D92E2056547E00D7544A /* AlTayyarUITests.swift */,
 				BEA2D9302056547E00D7544A /* Info.plist */,
 			);
@@ -154,6 +222,7 @@
 			children = (
 				BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */,
 				BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */,
+				BE79A3DD2056BA6900415404 /* ATConfigurationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -199,6 +268,7 @@
 			children = (
 				BE824B792056766F00528CB9 /* ATMovieEntity.swift */,
 				BE824B772056740300528CB9 /* ATAPIConfiguration.swift */,
+				BE79A3DF2056C0D200415404 /* ATAPPConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,6 +289,19 @@
 			path = WebServices;
 			sourceTree = "<group>";
 		};
+		C8A7AFD488CFD24FDCCA0556 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				691B58B955375F0CB0BEE1EA /* Pods-AlTayyar.debug.xcconfig */,
+				FA50E4D0A46D1D9A82A4DC00 /* Pods-AlTayyar.release.xcconfig */,
+				17C3E58CBC6B40F58DF0D12B /* Pods-AlTayyarTests.debug.xcconfig */,
+				0FF13673463EC4FFD7A80EDE /* Pods-AlTayyarTests.release.xcconfig */,
+				F3706181E58CFA93AE97CA8E /* Pods-AlTayyarUITests.debug.xcconfig */,
+				C3AE940DDE2A3E3AFBCBC037 /* Pods-AlTayyarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,9 +309,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEA2D9332056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyar" */;
 			buildPhases = (
+				C1F38863563E7360531CE96E /* [CP] Check Pods Manifest.lock */,
 				BEA2D9072056547E00D7544A /* Sources */,
 				BEA2D9082056547E00D7544A /* Frameworks */,
 				BEA2D9092056547E00D7544A /* Resources */,
+				B9C5723227CC04C394EE26DD /* [CP] Embed Pods Frameworks */,
+				D9DEF422306D5A084C652223 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEA2D9362056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyarTests" */;
 			buildPhases = (
+				A734CB13E7AD3FBBE7967121 /* [CP] Check Pods Manifest.lock */,
 				BEA2D91B2056547E00D7544A /* Sources */,
 				BEA2D91C2056547E00D7544A /* Frameworks */,
 				BEA2D91D2056547E00D7544A /* Resources */,
+				B0FBD9514DA930FEBE74FE5E /* [CP] Embed Pods Frameworks */,
+				C07D397A944B6BB338A47091 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,9 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEA2D9392056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyarUITests" */;
 			buildPhases = (
+				5CC7CDEB11FE9A341650FB76 /* [CP] Check Pods Manifest.lock */,
 				BEA2D9262056547E00D7544A /* Sources */,
 				BEA2D9272056547E00D7544A /* Frameworks */,
 				BEA2D9282056547E00D7544A /* Resources */,
+				A9DF025347F3BBB0EE469DFA /* [CP] Embed Pods Frameworks */,
+				0076C4ECF48FCF7DEE1AC4FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -348,6 +440,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0076C4ECF48FCF7DEE1AC4FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlTayyarUITests/Pods-AlTayyarUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CC7CDEB11FE9A341650FB76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlTayyarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A734CB13E7AD3FBBE7967121 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlTayyarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9DF025347F3BBB0EE469DFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlTayyarUITests/Pods-AlTayyarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FBD9514DA930FEBE74FE5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlTayyarTests/Pods-AlTayyarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C5723227CC04C394EE26DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlTayyar/Pods-AlTayyar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlTayyar/Pods-AlTayyar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C07D397A944B6BB338A47091 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlTayyarTests/Pods-AlTayyarTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1F38863563E7360531CE96E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlTayyar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9DEF422306D5A084C652223 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlTayyar/Pods-AlTayyar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEA2D9072056547E00D7544A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -356,7 +600,9 @@
 				BE79A3DC20569EDD00415404 /* ATFetchMoviesService.swift in Sources */,
 				BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */,
 				BEA2D945205655C000D7544A /* ATSplashViewController.swift in Sources */,
+				BE79A3E02056C0D200415404 /* ATAPPConfiguration.swift in Sources */,
 				BE824B7C205678B400528CB9 /* ATMoviesTableViewCell.swift in Sources */,
+				BE79A3DE2056BA6900415404 /* ATConfigurationViewModel.swift in Sources */,
 				BE824B7A2056766F00528CB9 /* ATMovieEntity.swift in Sources */,
 				BEA2D90F2056547E00D7544A /* AppDelegate.swift in Sources */,
 				BE824B782056740300528CB9 /* ATAPIConfiguration.swift in Sources */,
@@ -380,7 +626,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE79A3ED2056DB0F00415404 /* MovieDetailViewModelTests.swift in Sources */,
+				BE79A3EE2056DB0F00415404 /* MovieListViewModelTests.swift in Sources */,
+				BE79A3E82056DA4E00415404 /* MovieDetailViewControllerTests.swift in Sources */,
+				BE79A3F02056DB5200415404 /* MovieCategoryViewModelTests.swift in Sources */,
 				BEA2D92F2056547E00D7544A /* AlTayyarUITests.swift in Sources */,
+				BE79A3E72056DA4E00415404 /* SplashViewControllerTests.swift in Sources */,
+				BE79A3E62056DA4E00415404 /* MovieListViewControllerTests.swift in Sources */,
+				BE79A3EC2056DB0F00415404 /* ConfigurationViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +781,7 @@
 		};
 		BEA2D9342056547E00D7544A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691B58B955375F0CB0BEE1EA /* Pods-AlTayyar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -544,6 +798,7 @@
 		};
 		BEA2D9352056547E00D7544A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA50E4D0A46D1D9A82A4DC00 /* Pods-AlTayyar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -560,6 +815,7 @@
 		};
 		BEA2D9372056547E00D7544A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C3E58CBC6B40F58DF0D12B /* Pods-AlTayyarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +832,7 @@
 		};
 		BEA2D9382056547E00D7544A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF13673463EC4FFD7A80EDE /* Pods-AlTayyarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +849,7 @@
 		};
 		BEA2D93A2056547E00D7544A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3706181E58CFA93AE97CA8E /* Pods-AlTayyarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +865,7 @@
 		};
 		BEA2D93B2056547E00D7544A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3AE940DDE2A3E3AFBCBC037 /* Pods-AlTayyarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

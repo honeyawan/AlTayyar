@@ -7,12 +7,13 @@
 //
 
 import Foundation
-struct ATMovieListViewModel {
+class ATMovieListViewModel {
     
     var movies = [ATMovieEntity]()
     let movieIdentifier : String
     var loadMore : Bool = false
     var page = 1
+    let pageSize = 20
     
     func numberOfMovies()->Int {
         return movies.count
@@ -23,6 +24,10 @@ struct ATMovieListViewModel {
     }
     
     func imageForMovieAtIndexPath(indexPath : IndexPath) -> String {
+        if indexPath.count < movies.count {
+            let movie = movies[indexPath.row]
+            return ATAPPConfiguration.shared.urlForMovieLogo(logoId: movie.backdrop_path ?? "")
+        }
         return ""
     }
     
@@ -30,9 +35,19 @@ struct ATMovieListViewModel {
         self.movieIdentifier = movieIdentifier
     }
     
-    mutating func fetchMovies(_ completion : ((_ succes :Bool)->Void)) {
+    func fetchMovies(_ completion : @escaping ((_ succes :Bool)->Void)) {
         loadMore = true
-        completion(true)
+        weak var weakSelf = self
+        ATFetchMoviesService().getMoviesForCategoryIdentifier(movieIdentifier, page: page) { (movies) in
+            if let strongSelf = weakSelf {
+                if let newMovies = movies {
+                    strongSelf.loadMore = newMovies.count >= strongSelf.pageSize
+                    strongSelf.movies.append(contentsOf: newMovies)
+                    strongSelf.page = strongSelf.page + 1
+                }
+                completion(true)
+            }
+        }
     }
     
     

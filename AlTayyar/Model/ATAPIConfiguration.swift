@@ -20,13 +20,5 @@ struct ATAPIConfiguration : Codable {
         case posterSizes = "poster_sizes"
         case logoSizes = "logo_sizes"
     }
-    
-    func urlForMoviePoster(posterID : String) -> String {
-        return ""
-    }
-    
-    func urlForMovieLogo(logoId : String) -> String {
-        return ""
-    }
 }
 

@@ -9,6 +9,9 @@
 import UIKit
 
 class ATSplashViewController: UIViewController {
+    
+    let viewmodel =  ATConfigurationViewModel()
+    let segueID = "MoviesListControllerId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +19,12 @@ class ATSplashViewController: UIViewController {
     }
 
     func fetchConfigurations() {
-        
+        weak var weakSelf = self
+        viewmodel.getConfiguration {
+            if let strongSelf = weakSelf {
+                strongSelf.performSegue(withIdentifier: strongSelf.segueID, sender: nil)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,7 +34,6 @@ class ATSplashViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        performSegue(withIdentifier: "MoviesListControllerId", sender: nil)
 
     }
 
