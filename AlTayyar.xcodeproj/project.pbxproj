@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BE79A3D220568BEC00415404 /* ATMoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */; };
 		BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */; };
+		BE79A3D6205692EA00415404 /* ATMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */; };
+		BE79A3D8205697E800415404 /* ATMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D7205697E800415404 /* ATMoviesCollectionViewCell.swift */; };
+		BE79A3DA20569EBB00415404 /* ATAPIConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */; };
+		BE79A3DC20569EDD00415404 /* ATFetchMoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */; };
 		BE824B782056740300528CB9 /* ATAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B772056740300528CB9 /* ATAPIConfiguration.swift */; };
 		BE824B7A2056766F00528CB9 /* ATMovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B792056766F00528CB9 /* ATMovieEntity.swift */; };
 		BE824B7C205678B400528CB9 /* ATMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B7B205678B400528CB9 /* ATMoviesTableViewCell.swift */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesDetailViewController.swift; sourceTree = "<group>"; };
 		BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMovieCategoryViewModel.swift; sourceTree = "<group>"; };
+		BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieListViewModel.swift; sourceTree = "<group>"; };
+		BE79A3D7205697E800415404 /* ATMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIConfigurationService.swift; sourceTree = "<group>"; };
+		BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFetchMoviesService.swift; sourceTree = "<group>"; };
 		BE824B772056740300528CB9 /* ATAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIConfiguration.swift; sourceTree = "<group>"; };
 		BE824B792056766F00528CB9 /* ATMovieEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieEntity.swift; sourceTree = "<group>"; };
 		BE824B7B205678B400528CB9 /* ATMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMoviesTableViewCell.swift; sourceTree = "<group>"; };
@@ -145,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */,
+				BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,6 +179,7 @@
 		BEA2D93F2056553E00D7544A /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				BE79A3D7205697E800415404 /* ATMoviesCollectionViewCell.swift */,
 			);
 			path = CollectionViewCells;
 			sourceTree = "<group>";
@@ -203,6 +213,8 @@
 		BEA2D9432056558900D7544A /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */,
+				BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -341,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE79A3DC20569EDD00415404 /* ATFetchMoviesService.swift in Sources */,
 				BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */,
 				BEA2D945205655C000D7544A /* ATSplashViewController.swift in Sources */,
 				BE824B7C205678B400528CB9 /* ATMoviesTableViewCell.swift in Sources */,
@@ -348,7 +361,10 @@
 				BEA2D90F2056547E00D7544A /* AppDelegate.swift in Sources */,
 				BE824B782056740300528CB9 /* ATAPIConfiguration.swift in Sources */,
 				BE79A3D220568BEC00415404 /* ATMoviesDetailViewController.swift in Sources */,
+				BE79A3DA20569EBB00415404 /* ATAPIConfigurationService.swift in Sources */,
 				BEA2D94720565BB700D7544A /* ATMoviesListViewController.swift in Sources */,
+				BE79A3D6205692EA00415404 /* ATMovieListViewModel.swift in Sources */,
+				BE79A3D8205697E800415404 /* ATMoviesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

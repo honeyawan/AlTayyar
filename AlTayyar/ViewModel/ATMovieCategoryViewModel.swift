@@ -20,7 +20,7 @@ struct ATMovieCategoryViewModel {
             
     ]
     
-    func numberOfSection()->Int {
+    func numberOfCategories()->Int {
         return categories.count
     }
     
