@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEA2D90F2056547E00D7544A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D90E2056547E00D7544A /* AppDelegate.swift */; };
+		BEA2D9142056547E00D7544A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA2D9122056547E00D7544A /* Main.storyboard */; };
+		BEA2D9162056547E00D7544A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA2D9152056547E00D7544A /* Assets.xcassets */; };
+		BEA2D9192056547E00D7544A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA2D9172056547E00D7544A /* LaunchScreen.storyboard */; };
+		BEA2D9242056547E00D7544A /* AlTayyarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D9232056547E00D7544A /* AlTayyarTests.swift */; };
+		BEA2D92F2056547E00D7544A /* AlTayyarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D92E2056547E00D7544A /* AlTayyarUITests.swift */; };
+		BEA2D945205655C000D7544A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D944205655C000D7544A /* ViewController.swift */; };
+		BEA2D94720565BB700D7544A /* ATMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEA2D9202056547E00D7544A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA2D9032056547E00D7544A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA2D90A2056547E00D7544A;
+			remoteInfo = AlTayyar;
+		};
+		BEA2D92B2056547E00D7544A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA2D9032056547E00D7544A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA2D90A2056547E00D7544A;
+			remoteInfo = AlTayyar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEA2D90B2056547E00D7544A /* AlTayyar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlTayyar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA2D90E2056547E00D7544A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEA2D9132056547E00D7544A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEA2D9152056547E00D7544A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEA2D9182056547E00D7544A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEA2D91A2056547E00D7544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA2D91F2056547E00D7544A /* AlTayyarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlTayyarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA2D9232056547E00D7544A /* AlTayyarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlTayyarTests.swift; sourceTree = "<group>"; };
+		BEA2D9252056547E00D7544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA2D92A2056547E00D7544A /* AlTayyarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlTayyarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA2D92E2056547E00D7544A /* AlTayyarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlTayyarUITests.swift; sourceTree = "<group>"; };
+		BEA2D9302056547E00D7544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA2D944205655C000D7544A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEA2D9082056547E00D7544A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA2D91C2056547E00D7544A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA2D9272056547E00D7544A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEA2D9022056547E00D7544A = {
+			isa = PBXGroup;
+			children = (
+				BEA2D90D2056547E00D7544A /* AlTayyar */,
+				BEA2D9222056547E00D7544A /* AlTayyarTests */,
+				BEA2D92D2056547E00D7544A /* AlTayyarUITests */,
+				BEA2D90C2056547E00D7544A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEA2D90C2056547E00D7544A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEA2D90B2056547E00D7544A /* AlTayyar.app */,
+				BEA2D91F2056547E00D7544A /* AlTayyarTests.xctest */,
+				BEA2D92A2056547E00D7544A /* AlTayyarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA2D90D2056547E00D7544A /* AlTayyar */ = {
+			isa = PBXGroup;
+			children = (
+				BEA2D90E2056547E00D7544A /* AppDelegate.swift */,
+				BEA2D9412056553E00D7544A /* Model */,
+				BEA2D93D2056553E00D7544A /* View */,
+				BEA2D93C2056553E00D7544A /* ViewModel */,
+				BEA2D9422056558900D7544A /* DataManagers */,
+				BEA2D9432056558900D7544A /* WebServices */,
+				BEA2D9122056547E00D7544A /* Main.storyboard */,
+				BEA2D9152056547E00D7544A /* Assets.xcassets */,
+				BEA2D9172056547E00D7544A /* LaunchScreen.storyboard */,
+				BEA2D91A2056547E00D7544A /* Info.plist */,
+			);
+			path = AlTayyar;
+			sourceTree = "<group>";
+		};
+		BEA2D9222056547E00D7544A /* AlTayyarTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEA2D9232056547E00D7544A /* AlTayyarTests.swift */,
+				BEA2D9252056547E00D7544A /* Info.plist */,
+			);
+			path = AlTayyarTests;
+			sourceTree = "<group>";
+		};
+		BEA2D92D2056547E00D7544A /* AlTayyarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEA2D92E2056547E00D7544A /* AlTayyarUITests.swift */,
+				BEA2D9302056547E00D7544A /* Info.plist */,
+			);
+			path = AlTayyarUITests;
+			sourceTree = "<group>";
+		};
+		BEA2D93C2056553E00D7544A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BEA2D93D2056553E00D7544A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEA2D9402056553E00D7544A /* ViewController */,
+				BEA2D93E2056553E00D7544A /* TableViewCells */,
+				BEA2D93F2056553E00D7544A /* CollectionViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEA2D93E2056553E00D7544A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		BEA2D93F2056553E00D7544A /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		BEA2D9402056553E00D7544A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEA2D944205655C000D7544A /* ViewController.swift */,
+				BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BEA2D9412056553E00D7544A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEA2D9422056558900D7544A /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		BEA2D9432056558900D7544A /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEA2D90A2056547E00D7544A /* AlTayyar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA2D9332056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyar" */;
+			buildPhases = (
+				BEA2D9072056547E00D7544A /* Sources */,
+				BEA2D9082056547E00D7544A /* Frameworks */,
+				BEA2D9092056547E00D7544A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlTayyar;
+			productName = AlTayyar;
+			productReference = BEA2D90B2056547E00D7544A /* AlTayyar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEA2D91E2056547E00D7544A /* AlTayyarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA2D9362056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyarTests" */;
+			buildPhases = (
+				BEA2D91B2056547E00D7544A /* Sources */,
+				BEA2D91C2056547E00D7544A /* Frameworks */,
+				BEA2D91D2056547E00D7544A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEA2D9212056547E00D7544A /* PBXTargetDependency */,
+			);
+			name = AlTayyarTests;
+			productName = AlTayyarTests;
+			productReference = BEA2D91F2056547E00D7544A /* AlTayyarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEA2D9292056547E00D7544A /* AlTayyarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA2D9392056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyarUITests" */;
+			buildPhases = (
+				BEA2D9262056547E00D7544A /* Sources */,
+				BEA2D9272056547E00D7544A /* Frameworks */,
+				BEA2D9282056547E00D7544A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEA2D92C2056547E00D7544A /* PBXTargetDependency */,
+			);
+			name = AlTayyarUITests;
+			productName = AlTayyarUITests;
+			productReference = BEA2D92A2056547E00D7544A /* AlTayyarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEA2D9032056547E00D7544A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = AlTayyar;
+				TargetAttributes = {
+					BEA2D90A2056547E00D7544A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					BEA2D91E2056547E00D7544A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEA2D90A2056547E00D7544A;
+					};
+					BEA2D9292056547E00D7544A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEA2D90A2056547E00D7544A;
+					};
+				};
+			};
+			buildConfigurationList = BEA2D9062056547E00D7544A /* Build configuration list for PBXProject "AlTayyar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEA2D9022056547E00D7544A;
+			productRefGroup = BEA2D90C2056547E00D7544A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEA2D90A2056547E00D7544A /* AlTayyar */,
+				BEA2D91E2056547E00D7544A /* AlTayyarTests */,
+				BEA2D9292056547E00D7544A /* AlTayyarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEA2D9092056547E00D7544A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA2D9192056547E00D7544A /* LaunchScreen.storyboard in Resources */,
+				BEA2D9162056547E00D7544A /* Assets.xcassets in Resources */,
+				BEA2D9142056547E00D7544A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA2D91D2056547E00D7544A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA2D9282056547E00D7544A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEA2D9072056547E00D7544A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA2D945205655C000D7544A /* ViewController.swift in Sources */,
+				BEA2D90F2056547E00D7544A /* AppDelegate.swift in Sources */,
+				BEA2D94720565BB700D7544A /* ATMoviesListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA2D91B2056547E00D7544A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA2D9242056547E00D7544A /* AlTayyarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA2D9262056547E00D7544A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA2D92F2056547E00D7544A /* AlTayyarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEA2D9212056547E00D7544A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA2D90A2056547E00D7544A /* AlTayyar */;
+			targetProxy = BEA2D9202056547E00D7544A /* PBXContainerItemProxy */;
+		};
+		BEA2D92C2056547E00D7544A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA2D90A2056547E00D7544A /* AlTayyar */;
+			targetProxy = BEA2D92B2056547E00D7544A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEA2D9122056547E00D7544A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA2D9132056547E00D7544A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEA2D9172056547E00D7544A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEA2D9182056547E00D7544A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEA2D9312056547E00D7544A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEA2D9322056547E00D7544A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEA2D9342056547E00D7544A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AlTayyar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altayyar.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEA2D9352056547E00D7544A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AlTayyar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altayyar.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEA2D9372056547E00D7544A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlTayyarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altayyar.app.AlTayyarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlTayyar.app/AlTayyar";
+			};
+			name = Debug;
+		};
+		BEA2D9382056547E00D7544A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlTayyarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altayyar.app.AlTayyarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlTayyar.app/AlTayyar";
+			};
+			name = Release;
+		};
+		BEA2D93A2056547E00D7544A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlTayyarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altayyar.app.AlTayyarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlTayyar;
+			};
+			name = Debug;
+		};
+		BEA2D93B2056547E00D7544A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlTayyarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.altayyar.app.AlTayyarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlTayyar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEA2D9062056547E00D7544A /* Build configuration list for PBXProject "AlTayyar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA2D9312056547E00D7544A /* Debug */,
+				BEA2D9322056547E00D7544A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA2D9332056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA2D9342056547E00D7544A /* Debug */,
+				BEA2D9352056547E00D7544A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA2D9362056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA2D9372056547E00D7544A /* Debug */,
+				BEA2D9382056547E00D7544A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA2D9392056547E00D7544A /* Build configuration list for PBXNativeTarget "AlTayyarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA2D93A2056547E00D7544A /* Debug */,
+				BEA2D93B2056547E00D7544A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEA2D9032056547E00D7544A /* Project object */;
+}
