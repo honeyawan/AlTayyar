@@ -11,7 +11,7 @@ import Foundation
 import Alamofire
 
 
-struct MovieTempObject : Codable {
+private struct MoviesResponse : Codable {
     let total_results : Int?
     let total_pages : Int?
     let results : [ATMovieEntity]?
@@ -27,7 +27,7 @@ struct ATFetchMoviesService {
         request.responseString { (response) in
             var movies : [ATMovieEntity]?
             if let data = response.data {
-                let responseData = try? JSONDecoder().decode(MovieTempObject.self, from: data)
+                let responseData = try? JSONDecoder().decode(MoviesResponse.self, from: data)
                 movies = responseData?.results
             }
             DispatchQueue.main.async {

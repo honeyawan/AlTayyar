@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 
-struct ATAPIConfigurationParent : Codable {
+struct ATAPIConfigurationResponse : Codable {
     let images : ATAPIConfiguration?
 }
 
@@ -22,7 +22,7 @@ struct ATAPIConfigurationService {
         let request = Alamofire.request("\(ATAPPConfiguration.shared.baseUrl)/configuration?api_key=\(ATAPPConfiguration.shared.apiKey)", method: .get, parameters: nil , encoding: URLEncoding.default, headers:nil)
         request.responseString { (response) in
             if let data = response.data {
-                let responseData = try? JSONDecoder().decode(ATAPIConfigurationParent.self, from: data)
+                let responseData = try? JSONDecoder().decode(ATAPIConfigurationResponse.self, from: data)
                 ATAPPConfiguration.shared.updateConfiguration(config: (responseData?.images)!)
             }
             DispatchQueue.main.async {

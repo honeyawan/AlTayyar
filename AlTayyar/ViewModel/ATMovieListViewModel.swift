@@ -9,24 +9,38 @@
 import Foundation
 class ATMovieListViewModel {
     
-    var movies = [ATMovieEntity]()
-    let movieIdentifier : String
-    var loadMore : Bool = false
-    var page = 1
-    let pageSize = 20
+    private var movies = [ATMovieEntity]()
+    private let movieIdentifier : String
+    
+    // To check if more items can be fetched
+    private var canLoadMore : Bool = true
+    
+    /// This is to avoid multiple calls.
+    /// It will stop second call execution untill the response of first is returned
+    private var isLoadingData : Bool = false
+    
+    private var page = 1
+    private let pageSize = 20
+    
+    private var selectedMovie : ATMovieEntity?
     
     func numberOfMovies()->Int {
         return movies.count
     }
     
+    func movieSelectedAtIndexPath(_ indexPath : IndexPath) {
+        selectedMovie = movies[indexPath.row]
+    }
+    
+    
     func shouldLoadMoreMovies(indexPath : IndexPath)-> Bool {
-        return ((numberOfMovies() - 6) == indexPath.row  && loadMore)
+        return ((numberOfMovies() - 6) == indexPath.row  && canLoadMore && !isLoadingData)
     }
     
     func imageForMovieAtIndexPath(indexPath : IndexPath) -> String {
         if indexPath.count < movies.count {
             let movie = movies[indexPath.row]
-            return ATAPPConfiguration.shared.urlForMovieLogo(logoId: movie.backdrop_path ?? "")
+            return ATAPPConfiguration.shared.urlForMovieLogo(logoId: movie.poster_path ?? "")
         }
         return ""
     }
@@ -36,12 +50,13 @@ class ATMovieListViewModel {
     }
     
     func fetchMovies(_ completion : @escaping ((_ succes :Bool)->Void)) {
-        loadMore = true
+        isLoadingData = true
         weak var weakSelf = self
         ATFetchMoviesService().getMoviesForCategoryIdentifier(movieIdentifier, page: page) { (movies) in
             if let strongSelf = weakSelf {
                 if let newMovies = movies {
-                    strongSelf.loadMore = newMovies.count >= strongSelf.pageSize
+                    strongSelf.canLoadMore = newMovies.count >= strongSelf.pageSize
+                    strongSelf.isLoadingData = false
                     strongSelf.movies.append(contentsOf: newMovies)
                     strongSelf.page = strongSelf.page + 1
                 }
@@ -49,8 +64,5 @@ class ATMovieListViewModel {
             }
         }
     }
-    
-    
-    
     
 }

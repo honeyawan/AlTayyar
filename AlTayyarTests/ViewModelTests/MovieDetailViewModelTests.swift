@@ -29,4 +29,23 @@ class MovieDetailViewModelTests: XCTestCase {
     }
     
     
+    func testDescriptionForMovieDetail() {
+        
+    }
+    
+    
+    func testRatingsForMovieDetail() {
+        
+    }
+    
+    
+    func testImageForMovieDetail() {
+        
+    }
+    
+    func testTitleForMovieDetail() {
+        
+    }
+
+    
 }

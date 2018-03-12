@@ -31,7 +31,7 @@ class ATAPPConfiguration {
     }
     
     func urlForMovieLogo(logoId : String) -> String {
-        return "\(self.imageBaseUrl)\(self.logoSize)\(logoId)"
+        return "\(self.imageBaseUrl)\(self.posterSize)\(logoId)"
     }
     
     func urlForMoviePoster(posterID : String) -> String {

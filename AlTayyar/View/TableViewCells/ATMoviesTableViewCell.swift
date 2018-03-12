@@ -9,39 +9,42 @@
 import UIKit
 import AlamofireImage
 
+protocol ATMoviesTableViewCellDelegate {
+    func movieCellDidSelectedMovie()
+}
+
 class ATMoviesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    var cellDelegate : ATMoviesTableViewCellDelegate?
     var viewModel = ATMovieListViewModel(movieIdentifier: "identifier")
     let collectionCellID = "MovieCollectionCellID"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
     func setIdentifier(_ identifier : String) {
-        
         collectionView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
         viewModel = ATMovieListViewModel(movieIdentifier: identifier)
         getMoreMovies()
     }
     
-    func getMoreMovies(){
-        
+    func getMoreMovies() {
+        weak var weakSelf = self
         viewModel.fetchMovies { (success) in
-            self.collectionView.reloadData()
+            if let strongSelf = weakSelf {
+                strongSelf.collectionView.reloadData()
+            }
         }
-
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-    
-
 }
+
 extension ATMoviesTableViewCell : UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,5 +67,11 @@ extension ATMoviesTableViewCell : UICollectionViewDelegate,UICollectionViewDataS
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewModel.movieSelectedAtIndexPath(indexPath)
+        if let delegate = cellDelegate {
+            delegate.movieCellDidSelectedMovie()
+        }
+    }
     
 }

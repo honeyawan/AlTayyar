@@ -16,6 +16,7 @@ class ATMoviesListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.splitViewController!.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +41,7 @@ extension ATMoviesListViewController  {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ATMoviesTableViewCell
         cell.setIdentifier(moviesViewModel.identifierForSection(indexPath.section))
+        cell.cellDelegate = self
         return cell
     }
     
@@ -53,10 +55,31 @@ extension ATMoviesListViewController  {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
-        label.text = moviesViewModel.titleForSection(section)
+        label.text =  "  \(moviesViewModel.titleForSection(section))"
+        label.font = UIFont.boldSystemFont(ofSize: 17.0)
         label.backgroundColor = UIColor.white
         return label
     }
     
+}
+
+extension ATMoviesListViewController : ATMoviesTableViewCellDelegate {
+    func movieCellDidSelectedMovie() {
+//        self.splitViewController?.showDetailViewController(<#T##vc: UIViewController##UIViewController#>, sender: nil)
+    }
+}
+
+extension ATMoviesListViewController : UISplitViewControllerDelegate {
+    
+    
+    func splitViewController(_ splitViewController: UISplitViewController, show vc: UIViewController, sender: Any?) -> Bool {
+        return true
+    }
+    
+
+    func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
+        return true
+    }
+
 }
 
