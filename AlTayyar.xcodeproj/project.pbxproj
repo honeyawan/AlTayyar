@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE79A3D220568BEC00415404 /* ATMoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */; };
+		BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */; };
+		BE824B782056740300528CB9 /* ATAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B772056740300528CB9 /* ATAPIConfiguration.swift */; };
+		BE824B7A2056766F00528CB9 /* ATMovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B792056766F00528CB9 /* ATMovieEntity.swift */; };
+		BE824B7C205678B400528CB9 /* ATMoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE824B7B205678B400528CB9 /* ATMoviesTableViewCell.swift */; };
 		BEA2D90F2056547E00D7544A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D90E2056547E00D7544A /* AppDelegate.swift */; };
 		BEA2D9142056547E00D7544A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA2D9122056547E00D7544A /* Main.storyboard */; };
 		BEA2D9162056547E00D7544A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA2D9152056547E00D7544A /* Assets.xcassets */; };
 		BEA2D9192056547E00D7544A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEA2D9172056547E00D7544A /* LaunchScreen.storyboard */; };
 		BEA2D9242056547E00D7544A /* AlTayyarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D9232056547E00D7544A /* AlTayyarTests.swift */; };
 		BEA2D92F2056547E00D7544A /* AlTayyarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D92E2056547E00D7544A /* AlTayyarUITests.swift */; };
-		BEA2D945205655C000D7544A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D944205655C000D7544A /* ViewController.swift */; };
+		BEA2D945205655C000D7544A /* ATSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D944205655C000D7544A /* ATSplashViewController.swift */; };
 		BEA2D94720565BB700D7544A /* ATMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesDetailViewController.swift; sourceTree = "<group>"; };
+		BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMovieCategoryViewModel.swift; sourceTree = "<group>"; };
+		BE824B772056740300528CB9 /* ATAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIConfiguration.swift; sourceTree = "<group>"; };
+		BE824B792056766F00528CB9 /* ATMovieEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieEntity.swift; sourceTree = "<group>"; };
+		BE824B7B205678B400528CB9 /* ATMoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMoviesTableViewCell.swift; sourceTree = "<group>"; };
 		BEA2D90B2056547E00D7544A /* AlTayyar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlTayyar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA2D90E2056547E00D7544A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEA2D9132056547E00D7544A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +57,7 @@
 		BEA2D92A2056547E00D7544A /* AlTayyarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlTayyarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA2D92E2056547E00D7544A /* AlTayyarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlTayyarUITests.swift; sourceTree = "<group>"; };
 		BEA2D9302056547E00D7544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEA2D944205655C000D7544A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEA2D944205655C000D7544A /* ATSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATSplashViewController.swift; sourceTree = "<group>"; };
 		BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +144,7 @@
 		BEA2D93C2056553E00D7544A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 		BEA2D93E2056553E00D7544A /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				BE824B7B205678B400528CB9 /* ATMoviesTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -165,8 +177,9 @@
 		BEA2D9402056553E00D7544A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BEA2D944205655C000D7544A /* ViewController.swift */,
+				BEA2D944205655C000D7544A /* ATSplashViewController.swift */,
 				BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */,
+				BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -174,6 +187,8 @@
 		BEA2D9412056553E00D7544A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE824B792056766F00528CB9 /* ATMovieEntity.swift */,
+				BE824B772056740300528CB9 /* ATAPIConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,8 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEA2D945205655C000D7544A /* ViewController.swift in Sources */,
+				BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */,
+				BEA2D945205655C000D7544A /* ATSplashViewController.swift in Sources */,
+				BE824B7C205678B400528CB9 /* ATMoviesTableViewCell.swift in Sources */,
+				BE824B7A2056766F00528CB9 /* ATMovieEntity.swift in Sources */,
 				BEA2D90F2056547E00D7544A /* AppDelegate.swift in Sources */,
+				BE824B782056740300528CB9 /* ATAPIConfiguration.swift in Sources */,
+				BE79A3D220568BEC00415404 /* ATMoviesDetailViewController.swift in Sources */,
 				BEA2D94720565BB700D7544A /* ATMoviesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

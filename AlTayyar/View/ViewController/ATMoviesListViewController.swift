@@ -12,6 +12,8 @@ class ATMoviesListViewController: UITableViewController {
     
     
     private let cellID = "MoviesTypeCellD"
+    
+    let moviesViewModel = ATMovieCategoryViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +33,30 @@ class ATMoviesListViewController: UITableViewController {
 extension ATMoviesListViewController  {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 1
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return moviesViewModel.numberOfSection()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
         return cell
+    }
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return moviesViewModel.titleForSection(section)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.text = moviesViewModel.titleForSection(section)
+        label.backgroundColor = UIColor.white
+        return label
     }
     
 }
