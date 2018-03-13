@@ -11,13 +11,13 @@ import XCTest
 
 class MovieListViewModelTests: XCTestCase {
         
-    var movieListViewModel: ATMovieListViewModel!
+    var movieListViewModel: ATMovieCollectionViewModel!
     
     
     override func setUp() {
         super.setUp()
         let categoryModel = ATMovieCategoryViewModel()
-        movieListViewModel = ATMovieListViewModel(movieIdentifier: categoryModel.identifierForSection(0))
+        movieListViewModel = ATMovieCollectionViewModel(movieIdentifier: categoryModel.identifierForSection(0))
     }
     
     override func tearDown() {

@@ -20,7 +20,7 @@ class ATMoviesTableViewCell: UITableViewCell {
 
 
     var cellDelegate : ATMoviesTableViewCellDelegate?
-    var viewModel : ATMovieListViewModel! {
+    var viewModel : ATMovieCollectionViewModel! {
         didSet {
             collectionView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
             collectionView.reloadData()
