@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ATMovieListViewModel {
+class ATMovieCollectionViewModel {
     
     private var movies = [ATMovieEntity]()
     private let movieIdentifier : String

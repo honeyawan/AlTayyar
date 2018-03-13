@@ -12,7 +12,7 @@
 		AE5DF3083DDB21235DFCAE71 /* Pods_AlTayyarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A9D041A1A96DC845E87D96 /* Pods_AlTayyarTests.framework */; };
 		BE79A3D220568BEC00415404 /* ATMoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */; };
 		BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */; };
-		BE79A3D6205692EA00415404 /* ATMovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */; };
+		BE79A3D6205692EA00415404 /* ATMovieCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D5205692EA00415404 /* ATMovieCollectionViewModel.swift */; };
 		BE79A3D8205697E800415404 /* ATMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D7205697E800415404 /* ATMoviesCollectionViewCell.swift */; };
 		BE79A3DA20569EBB00415404 /* ATAPIConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */; };
 		BE79A3DC20569EDD00415404 /* ATFetchMoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */; };
@@ -65,7 +65,7 @@
 		B3E836DBCBE78E6CECE2B9C3 /* Pods_AlTayyarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlTayyarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE79A3D120568BEC00415404 /* ATMoviesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesDetailViewController.swift; sourceTree = "<group>"; };
 		BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMovieCategoryViewModel.swift; sourceTree = "<group>"; };
-		BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieListViewModel.swift; sourceTree = "<group>"; };
+		BE79A3D5205692EA00415404 /* ATMovieCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieCollectionViewModel.swift; sourceTree = "<group>"; };
 		BE79A3D7205697E800415404 /* ATMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIConfigurationService.swift; sourceTree = "<group>"; };
 		BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFetchMoviesService.swift; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 			children = (
 				BE79A3DD2056BA6900415404 /* ATConfigurationViewModel.swift */,
 				BE79A3D320568CD500415404 /* ATMovieCategoryViewModel.swift */,
-				BE79A3D5205692EA00415404 /* ATMovieListViewModel.swift */,
+				BE79A3D5205692EA00415404 /* ATMovieCollectionViewModel.swift */,
 				BE79A3F12057030C00415404 /* ATMovieDetailViewModel.swift */,
 			);
 			path = ViewModel;
@@ -632,7 +632,7 @@
 				BE79A3D220568BEC00415404 /* ATMoviesDetailViewController.swift in Sources */,
 				BE79A3DA20569EBB00415404 /* ATAPIConfigurationService.swift in Sources */,
 				BEA2D94720565BB700D7544A /* ATMoviesListViewController.swift in Sources */,
-				BE79A3D6205692EA00415404 /* ATMovieListViewModel.swift in Sources */,
+				BE79A3D6205692EA00415404 /* ATMovieCollectionViewModel.swift in Sources */,
 				BE79A3D8205697E800415404 /* ATMoviesCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

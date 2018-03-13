@@ -16,7 +16,7 @@ struct ATConfigurationViewModel {
         var movieCategoryViewModel = ATMovieCategoryViewModel()
         for category in movieCategoryViewModel.categories {
             dispatchGroup.enter()
-            let model = ATMovieListViewModel.init(movieIdentifier: category.identifier)
+            let model = ATMovieCollectionViewModel.init(movieIdentifier: category.identifier)
             model.fetchMovies({
                 movieCategoryViewModel.addlistViewModel(model)
                 dispatchGroup.leave()
