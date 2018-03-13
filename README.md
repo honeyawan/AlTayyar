@@ -1,6 +1,7 @@
 # AlTayyar
 Al Tayyar Case Study
 
+# Code Architecture
 The Source Code Makes Use of MVVM as the architecture Design Patterns.
 We have 3 View Controller classes
 1- ATSplashViewController  which is used along with Configuration ViewModel to download all the initial data along with API configurations in the background.
@@ -20,11 +21,18 @@ ATMovieListViewModel : is used by ATMoviesTableViewCell and is responsible to pr
 ATMovieDetailViewModel : is used by ATMoviesDetailViewController to provide data for movie detail view
 
 
+# User Interface
+
 The Source Code makes use of StoryBoard and Autolayout and the main component is the UISplitViewController which works as master->Detail Viewcontroller. This makes sure that in iPad both views are shown simultaneously.
 
 
-The Source Code makes use of Cocoa Pods for Dependency mangement and we have used 
+# Third Party
+
+The Source Code makes use of Cocoa Pods for Dependency management. We have used 
 AlamofireImage + Alamofire library for downloading and caching images along with making calls to different APIS.
+
+
+# Unit Tests
 
 The Source code also contains various Unit tests covering various parts of the code. I have Unit tests for UIViewControllers, UITableViewCell and ViewModels to achieve code coverage.
 
