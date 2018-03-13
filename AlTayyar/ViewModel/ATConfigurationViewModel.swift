@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ATConfigurationViewModel {
+struct ATConfigurationViewModel {
     
     func downloadData(completion : @escaping ((_ movieCategoryViewModel : ATMovieCategoryViewModel)->Void)) {
         
@@ -18,7 +18,7 @@ class ATConfigurationViewModel {
             dispatchGroup.enter()
             let model = ATMovieListViewModel.init(movieIdentifier: category.identifier)
             model.fetchMovies({
-                movieCategoryViewModel.listViewModels.append(model)
+                movieCategoryViewModel.addlistViewModel(model)
                 dispatchGroup.leave()
             })
         }

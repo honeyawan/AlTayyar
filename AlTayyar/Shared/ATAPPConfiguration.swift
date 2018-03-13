@@ -13,11 +13,8 @@ class ATAPPConfiguration {
    
     let apiKey = "114fe6670282f6a632638661e5e86dee"
     let baseUrl = "https://api.themoviedb.org/3"
-    
     let is_iPadDevice = UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiom.pad
 
-
-    
     static let shared = ATAPPConfiguration()
     private init() {
     }

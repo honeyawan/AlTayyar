@@ -20,6 +20,8 @@ class TableViewCellTests: XCTestCase {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let movieListViewController = storyboard.instantiateViewController(withIdentifier: "MoviesListViewControllerID") as! ATMoviesListViewController
         _ = movieListViewController.view
+        movieListViewController.moviesViewModel = ATMovieCategoryViewModel()
+
         
         moviesTableViewCell =  movieListViewController.tableView(movieListViewController.tableView, cellForRowAt: IndexPath.init(row: 0, section: 0)) as! ATMoviesTableViewCell
 
@@ -32,7 +34,6 @@ class TableViewCellTests: XCTestCase {
     
     func testIBOutletsAreNotNil() {
         XCTAssertNotNil(moviesTableViewCell.collectionView)
-        XCTAssertNotNil(moviesTableViewCell.mainSpinner)
         XCTAssertNotNil(moviesTableViewCell.rightSpinner)
     }
     

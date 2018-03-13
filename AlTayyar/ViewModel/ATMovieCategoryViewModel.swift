@@ -20,10 +20,30 @@ struct ATMovieCategoryViewModel {
             
     ]
     
-    var listViewModels = [ATMovieListViewModel]()
+    private var listViewModels = [ATMovieListViewModel]()
     
     func numberOfCategories()->Int {
         return categories.count
+    }
+    
+    mutating func addlistViewModel (_ model : ATMovieListViewModel) {
+        listViewModels.append(model)
+    }
+    
+    func numberOfListViewModels()-> Int {
+        return listViewModels.count
+    }
+    
+    
+    
+    func listViewModelForSection(_ section : Int)->ATMovieListViewModel? {
+        var viewModel : ATMovieListViewModel?
+        if section < numberOfListViewModels() {
+        let identifier = identifierForSection(section)
+        let filteredArray = listViewModels.filter{return $0.getMovieIdentifier() == identifier}
+        viewModel =  filteredArray.first
+        }
+        return viewModel
     }
     
     func titleForSection(_ section : Int) -> String {

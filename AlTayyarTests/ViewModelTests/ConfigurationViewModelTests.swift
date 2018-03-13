@@ -24,17 +24,12 @@ class ConfigurationViewModelTests: XCTestCase {
     
     func testGetConfiguration(){
         
-       let expectation = XCTestExpectation.init(description: "wait For Config Response")
-        configViewModel.getConfiguration { (apiConfigs) in
+        let expectation = self.expectation(description: "download Data Expectation")
+        configViewModel.downloadData { (apiConfigs) in
             expectation.fulfill()
-
         }
         
-        self.waitForExpectations(timeout: 10) { (error) in
-            if(error != nil)
-            {
-                XCTFail("unable To Get Response from config API")
-            }
+        self.waitForExpectations(timeout: 15) { (error) in
 
         }
         

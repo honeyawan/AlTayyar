@@ -18,6 +18,7 @@ class MovieListViewControllerTests: XCTestCase {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         movieListViewController = storyboard.instantiateViewController(withIdentifier: "MoviesListViewControllerID") as! ATMoviesListViewController
         _ = movieListViewController.view
+        movieListViewController.moviesViewModel = ATMovieCategoryViewModel()
     }
     
     

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@objc class ATMovieListViewModel : NSObject{
+class ATMovieListViewModel {
     
     private var movies = [ATMovieEntity]()
     private let movieIdentifier : String
@@ -21,12 +21,15 @@ import Foundation
     
     private var page = 1
     private let pageSize = 20
-    
     private var selectedMovie : ATMovieEntity?
     
     
     init(movieIdentifier : String) {
         self.movieIdentifier = movieIdentifier
+    }
+    
+    func getMovieIdentifier()->String {
+        return movieIdentifier
     }
 
     

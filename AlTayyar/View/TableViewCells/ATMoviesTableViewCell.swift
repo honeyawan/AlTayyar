@@ -23,6 +23,7 @@ class ATMoviesTableViewCell: UITableViewCell {
     var viewModel : ATMovieListViewModel! {
         didSet {
             collectionView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
+            collectionView.reloadData()
             if viewModel.numberOfMovies() == 0 {
                 getMoreMovies()
             }

@@ -26,7 +26,7 @@ class MovieListViewModelTests: XCTestCase {
     
     
     func testFetchMovies() {
-        let expectation = XCTestExpectation.init(description: "wait For Movies Response")
+        let expectation = self.expectation(description: "wait For Movies Response")
 
         XCTAssertEqual(movieListViewModel.numberOfMovies(), 0)
         movieListViewModel.fetchMovies {
@@ -36,9 +36,9 @@ class MovieListViewModelTests: XCTestCase {
 
         }
         
-//        self.waitForExpectations(timeout: 10) { (error) in
-//
-//        }
+        self.waitForExpectations(timeout: 10) { (error) in
+
+        }
     }
     
 

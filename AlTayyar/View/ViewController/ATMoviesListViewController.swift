@@ -34,8 +34,9 @@ extension ATMoviesListViewController  {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ATMoviesTableViewCell
-        let listViewModel = moviesViewModel.listViewModels[indexPath.section]
-        cell.viewModel = listViewModel
+        if let listViewModel = moviesViewModel.listViewModelForSection(indexPath.section) {
+            cell.viewModel = listViewModel
+        }
         cell.cellDelegate = self
         return cell
     }
