@@ -11,6 +11,7 @@ import UIKit
 class ATSplashViewController: UIViewController {
     
     private let viewmodel =  ATConfigurationViewModel()
+    private var movieCategoryViewModel : ATMovieCategoryViewModel!
     let segueID = "MoviesListControllerId"
 
     override func viewDidLoad() {
@@ -20,8 +21,9 @@ class ATSplashViewController: UIViewController {
 
     func fetchConfigurations() {
         weak var weakSelf = self
-        viewmodel.getConfiguration {
+        viewmodel.downloadData { (movieCategoryViewModel) in
             if let strongSelf = weakSelf {
+                strongSelf.movieCategoryViewModel = movieCategoryViewModel
                 strongSelf.performSegue(withIdentifier: strongSelf.segueID, sender: nil)
             }
         }
@@ -37,7 +39,11 @@ class ATSplashViewController: UIViewController {
             let detailViewController = rightNavController.topViewController as? ATMoviesDetailViewController
             else { return}
         
+        if ATAPPConfiguration.shared.is_iPadDevice {
+            splitViewController.preferredDisplayMode = .primaryOverlay
+        }
         masterViewController.delegate = detailViewController
+        masterViewController.moviesViewModel = movieCategoryViewModel
         splitViewController.delegate = masterViewController
         detailViewController.navigationItem.leftItemsSupplementBackButton = true
         detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem

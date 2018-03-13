@@ -25,8 +25,9 @@ class ConfigurationViewModelTests: XCTestCase {
     func testGetConfiguration(){
         
        let expectation = XCTestExpectation.init(description: "wait For Config Response")
-        configViewModel.getConfiguration {
+        configViewModel.getConfiguration { (apiConfigs) in
             expectation.fulfill()
+
         }
         
         self.waitForExpectations(timeout: 10) { (error) in

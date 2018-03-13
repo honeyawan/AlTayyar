@@ -15,7 +15,7 @@ protocol MovieSelectionDelegate: class {
 class ATMoviesListViewController: UITableViewController {
         
     private let cellID = "MoviesTypeCellD"
-    private let moviesViewModel = ATMovieCategoryViewModel()
+    var moviesViewModel : ATMovieCategoryViewModel!
     weak open var delegate: MovieSelectionDelegate?
 
 }
@@ -34,7 +34,8 @@ extension ATMoviesListViewController  {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! ATMoviesTableViewCell
-        cell.setIdentifier(moviesViewModel.identifierForSection(indexPath.section))
+        let listViewModel = moviesViewModel.listViewModels[indexPath.section]
+        cell.viewModel = listViewModel
         cell.cellDelegate = self
         return cell
     }

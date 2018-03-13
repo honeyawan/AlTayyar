@@ -10,8 +10,27 @@ import Foundation
 
 class ATConfigurationViewModel {
     
-    func getConfiguration(completion : @escaping (()->Void)) {
+    func downloadData(completion : @escaping ((_ movieCategoryViewModel : ATMovieCategoryViewModel)->Void)) {
+        
+        let dispatchGroup = DispatchGroup()
+        var movieCategoryViewModel = ATMovieCategoryViewModel()
+        for category in movieCategoryViewModel.categories {
+            dispatchGroup.enter()
+            let model = ATMovieListViewModel.init(movieIdentifier: category.identifier)
+            model.fetchMovies({
+                movieCategoryViewModel.listViewModels.append(model)
+                dispatchGroup.leave()
+            })
+        }
+        dispatchGroup.enter()
         let service = ATAPIConfigurationService()
-        service.getApiConfigurations(completion: completion)
+        service.getApiConfigurations { (apiConfig) in
+            ATAPPConfiguration.shared.updateConfiguration(config: apiConfig)
+            dispatchGroup.leave()
+
+        }
+        dispatchGroup.notify(queue: .main) {
+            completion(movieCategoryViewModel)
+        }
     }
 }

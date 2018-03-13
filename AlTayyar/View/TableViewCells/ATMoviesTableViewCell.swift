@@ -16,25 +16,25 @@ protocol ATMoviesTableViewCellDelegate {
 class ATMoviesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var mainSpinner: UIActivityIndicatorView!
     @IBOutlet weak var rightSpinner: UIActivityIndicatorView!
 
 
     var cellDelegate : ATMoviesTableViewCellDelegate?
-    var viewModel = ATMovieListViewModel(movieIdentifier: "identifier")
+    var viewModel : ATMovieListViewModel! {
+        didSet {
+            collectionView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
+            if viewModel.numberOfMovies() == 0 {
+                getMoreMovies()
+            }
+        }
+    }
     let collectionCellID = "MovieCollectionCellID"
     
-    
-    func setIdentifier(_ identifier : String) {
-        // Re-usable TableView Cell needs to fetch New movies
-        collectionView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
-        viewModel = ATMovieListViewModel(movieIdentifier: identifier)
-        getMoreMovies()
-    }
-    
    private func getMoreMovies() {
+    
         weak var weakSelf = self
         showLoading()
+    
         viewModel.fetchMovies { () in
             if let strongSelf = weakSelf {
                 strongSelf.hideLoading()
@@ -44,19 +44,13 @@ class ATMoviesTableViewCell: UITableViewCell {
     }
     
    private func showLoading() {
-        if viewModel.isFirstPage {
-            mainSpinner.isHidden = false
-            mainSpinner.startAnimating()
-        }
-        else {
             rightSpinner.isHidden = false
             rightSpinner.startAnimating()
-        }
     }
     
    private func hideLoading() {
         rightSpinner.isHidden = true
-        mainSpinner.isHidden = true
+        rightSpinner.stopAnimating()
 
     }
 }

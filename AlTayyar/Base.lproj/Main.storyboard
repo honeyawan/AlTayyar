@@ -200,9 +200,6 @@
                                                 </collectionView>
                                             </subviews>
                                         </stackView>
-                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="5EM-nn-FaH">
-                                            <rect key="frame" x="177" y="89" width="20" height="20"/>
-                                        </activityIndicatorView>
                                         <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="gaP-DY-bX5">
                                             <rect key="frame" x="345" y="89" width="20" height="20"/>
                                         </activityIndicatorView>
@@ -213,14 +210,11 @@
                                         <constraint firstAttribute="bottom" secondItem="V4t-3x-f51" secondAttribute="bottom" constant="10" id="98Y-y9-Boz"/>
                                         <constraint firstItem="gaP-DY-bX5" firstAttribute="centerY" secondItem="IRi-7l-GPM" secondAttribute="centerY" id="JhO-Tc-tK1"/>
                                         <constraint firstItem="gaP-DY-bX5" firstAttribute="trailing" secondItem="V4t-3x-f51" secondAttribute="trailing" id="YaR-sR-N12"/>
-                                        <constraint firstItem="5EM-nn-FaH" firstAttribute="centerX" secondItem="IRi-7l-GPM" secondAttribute="centerX" id="dbC-7d-Tx4"/>
                                         <constraint firstAttribute="trailing" secondItem="V4t-3x-f51" secondAttribute="trailing" constant="10" id="q24-qF-pcZ"/>
-                                        <constraint firstItem="5EM-nn-FaH" firstAttribute="centerY" secondItem="IRi-7l-GPM" secondAttribute="centerY" id="u6A-dz-3Jz"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="collectionView" destination="dXq-Pl-qzX" id="qTF-v2-1hW"/>
-                                    <outlet property="mainSpinner" destination="5EM-nn-FaH" id="VNs-L9-bJf"/>
                                     <outlet property="rightSpinner" destination="gaP-DY-bX5" id="vGO-UF-e7g"/>
                                 </connections>
                             </tableViewCell>

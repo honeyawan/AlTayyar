@@ -20,6 +20,8 @@ struct ATMovieCategoryViewModel {
             
     ]
     
+    var listViewModels = [ATMovieListViewModel]()
+    
     func numberOfCategories()->Int {
         return categories.count
     }
