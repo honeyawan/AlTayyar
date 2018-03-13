@@ -24,6 +24,12 @@ import Foundation
     
     private var selectedMovie : ATMovieEntity?
     
+    
+    init(movieIdentifier : String) {
+        self.movieIdentifier = movieIdentifier
+    }
+
+    
     func numberOfMovies()->Int {
         return movies.count
     }
@@ -53,16 +59,12 @@ import Foundation
     func imageForMovieAtIndexPath(indexPath : IndexPath) -> String {
         if indexPath.count < movies.count {
             let movie = movies[indexPath.row]
-            return ATAPPConfiguration.shared.urlForMoviePoster(posterPath: movie.poster_path ?? "")
+            return ATAPPConfiguration.shared.urlForMoviePoster(posterPath: movie.posterPath ?? "")
         }
         return ""
     }
     
-    init(movieIdentifier : String) {
-        self.movieIdentifier = movieIdentifier
-    }
-    
-    func fetchMovies(_ completion : @escaping ((_ succes :Bool)->Void)) {
+    func fetchMovies(_ completion : @escaping (()->Void)) {
         isLoadingData = true
         weak var weakSelf = self
         ATFetchMoviesService().getMoviesForCategoryIdentifier(movieIdentifier, page: page) { (movies) in
@@ -73,7 +75,7 @@ import Foundation
                     strongSelf.movies.append(contentsOf: newMovies)
                     strongSelf.page = strongSelf.page + 1
                 }
-                completion(true)
+                completion()
             }
         }
     }

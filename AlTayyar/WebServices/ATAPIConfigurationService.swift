@@ -9,8 +9,8 @@
 import Foundation
 import Alamofire
 
-
-struct ATAPIConfigurationResponse : Codable {
+// Private Sturcture to Parse Json with Codable
+private struct ATAPIConfigurationResponse : Codable {
     let images : ATAPIConfiguration?
 }
 

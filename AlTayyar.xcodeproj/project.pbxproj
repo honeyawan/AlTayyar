@@ -17,7 +17,6 @@
 		BE79A3DA20569EBB00415404 /* ATAPIConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */; };
 		BE79A3DC20569EDD00415404 /* ATFetchMoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */; };
 		BE79A3DE2056BA6900415404 /* ATConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DD2056BA6900415404 /* ATConfigurationViewModel.swift */; };
-		BE79A3E02056C0D200415404 /* ATAPPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3DF2056C0D200415404 /* ATAPPConfiguration.swift */; };
 		BE79A3F22057030C00415404 /* ATMovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3F12057030C00415404 /* ATMovieDetailViewModel.swift */; };
 		BE79A3FC2057061000415404 /* SplashViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3F42057061000415404 /* SplashViewControllerTests.swift */; };
 		BE79A3FD2057061000415404 /* MovieDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79A3F52057061000415404 /* MovieDetailViewControllerTests.swift */; };
@@ -37,6 +36,8 @@
 		BEA2D92F2056547E00D7544A /* AlTayyarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D92E2056547E00D7544A /* AlTayyarUITests.swift */; };
 		BEA2D945205655C000D7544A /* ATSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D944205655C000D7544A /* ATSplashViewController.swift */; };
 		BEA2D94720565BB700D7544A /* ATMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */; };
+		BEEDBD4A2057D6A50091929A /* ATAPPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEDBD492057D6A50091929A /* ATAPPConfiguration.swift */; };
+		BEEDBD522057E53D0091929A /* TableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEDBD512057E53D0091929A /* TableViewCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +70,6 @@
 		BE79A3D920569EBB00415404 /* ATAPIConfigurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATAPIConfigurationService.swift; sourceTree = "<group>"; };
 		BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATFetchMoviesService.swift; sourceTree = "<group>"; };
 		BE79A3DD2056BA6900415404 /* ATConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATConfigurationViewModel.swift; sourceTree = "<group>"; };
-		BE79A3DF2056C0D200415404 /* ATAPPConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATAPPConfiguration.swift; sourceTree = "<group>"; };
 		BE79A3F12057030C00415404 /* ATMovieDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMovieDetailViewModel.swift; sourceTree = "<group>"; };
 		BE79A3F42057061000415404 /* SplashViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewControllerTests.swift; sourceTree = "<group>"; };
 		BE79A3F52057061000415404 /* MovieDetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewControllerTests.swift; sourceTree = "<group>"; };
@@ -95,6 +95,8 @@
 		BEA2D9302056547E00D7544A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA2D944205655C000D7544A /* ATSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATSplashViewController.swift; sourceTree = "<group>"; };
 		BEA2D94620565BB700D7544A /* ATMoviesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMoviesListViewController.swift; sourceTree = "<group>"; };
+		BEEDBD492057D6A50091929A /* ATAPPConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATAPPConfiguration.swift; sourceTree = "<group>"; };
+		BEEDBD512057E53D0091929A /* TableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellTests.swift; sourceTree = "<group>"; };
 		C3AE940DDE2A3E3AFBCBC037 /* Pods-AlTayyarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyarUITests/Pods-AlTayyarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ED70497F050CC83C7149B9F5 /* Pods_AlTayyar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlTayyar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3706181E58CFA93AE97CA8E /* Pods-AlTayyarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlTayyarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlTayyarUITests/Pods-AlTayyarUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,8 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				BE79A3F42057061000415404 /* SplashViewControllerTests.swift */,
-				BE79A3F52057061000415404 /* MovieDetailViewControllerTests.swift */,
 				BE79A3F62057061000415404 /* MovieListViewControllerTests.swift */,
+				BE79A3F52057061000415404 /* MovieDetailViewControllerTests.swift */,
 			);
 			path = ViewControllerTests;
 			sourceTree = "<group>";
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				BEA2D90E2056547E00D7544A /* AppDelegate.swift */,
+				BEEDBD482057D6A50091929A /* Shared */,
 				BEA2D9412056553E00D7544A /* Model */,
 				BEA2D93D2056553E00D7544A /* View */,
 				BEA2D93C2056553E00D7544A /* ViewModel */,
@@ -203,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				BE79A3F32057061000415404 /* ViewControllerTests */,
+				BEEDBD502057E53D0091929A /* TableViewCellsTests */,
 				BE79A3F72057061000415404 /* ViewModelTests */,
 				BEA2D9232056547E00D7544A /* AlTayyarTests.swift */,
 				BEA2D9252056547E00D7544A /* Info.plist */,
@@ -271,7 +275,6 @@
 			children = (
 				BE824B792056766F00528CB9 /* ATMovieEntity.swift */,
 				BE824B772056740300528CB9 /* ATAPIConfiguration.swift */,
-				BE79A3DF2056C0D200415404 /* ATAPPConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,6 +293,22 @@
 				BE79A3DB20569EDD00415404 /* ATFetchMoviesService.swift */,
 			);
 			path = WebServices;
+			sourceTree = "<group>";
+		};
+		BEEDBD482057D6A50091929A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BEEDBD492057D6A50091929A /* ATAPPConfiguration.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BEEDBD502057E53D0091929A /* TableViewCellsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEEDBD512057E53D0091929A /* TableViewCellTests.swift */,
+			);
+			path = TableViewCellsTests;
 			sourceTree = "<group>";
 		};
 		C8A7AFD488CFD24FDCCA0556 /* Pods */ = {
@@ -601,9 +620,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE79A3DC20569EDD00415404 /* ATFetchMoviesService.swift in Sources */,
+				BEEDBD4A2057D6A50091929A /* ATAPPConfiguration.swift in Sources */,
 				BE79A3D420568CD500415404 /* ATMovieCategoryViewModel.swift in Sources */,
 				BEA2D945205655C000D7544A /* ATSplashViewController.swift in Sources */,
-				BE79A3E02056C0D200415404 /* ATAPPConfiguration.swift in Sources */,
 				BE824B7C205678B400528CB9 /* ATMoviesTableViewCell.swift in Sources */,
 				BE79A3DE2056BA6900415404 /* ATConfigurationViewModel.swift in Sources */,
 				BE824B7A2056766F00528CB9 /* ATMovieEntity.swift in Sources */,
@@ -627,6 +646,7 @@
 				BE79A4002057061000415404 /* MovieCategoryViewModelTests.swift in Sources */,
 				BE79A3FD2057061000415404 /* MovieDetailViewControllerTests.swift in Sources */,
 				BE79A4022057061000415404 /* MovieDetailViewModelTests.swift in Sources */,
+				BEEDBD522057E53D0091929A /* TableViewCellTests.swift in Sources */,
 				BE79A3FC2057061000415404 /* SplashViewControllerTests.swift in Sources */,
 				BE79A3FF2057061000415404 /* MovieListViewModelTests.swift in Sources */,
 				BE79A3FE2057061000415404 /* MovieListViewControllerTests.swift in Sources */,

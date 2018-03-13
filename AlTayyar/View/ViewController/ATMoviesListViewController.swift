@@ -15,23 +15,13 @@ protocol MovieSelectionDelegate: class {
 class ATMoviesListViewController: UITableViewController {
         
     private let cellID = "MoviesTypeCellD"
-    let moviesViewModel = ATMovieCategoryViewModel()
+    private let moviesViewModel = ATMovieCategoryViewModel()
     weak open var delegate: MovieSelectionDelegate?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 
 }
 
 
-//MARK : UITableViewDelegate,UITableViewDataSource
+//MARK: UITableViewDelegate,UITableViewDataSource
 extension ATMoviesListViewController  {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,10 +39,6 @@ extension ATMoviesListViewController  {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return moviesViewModel.titleForSection(section)
-    }
-    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
@@ -67,17 +53,21 @@ extension ATMoviesListViewController  {
     
 }
 
+
+//MARK: ATMoviesTableViewCellDelegate
 extension ATMoviesListViewController : ATMoviesTableViewCellDelegate {
     
     func movieCellDidSelectedMovie(detailViewModel : ATMovieDetailViewModel) {
         if let detailViewController = delegate as? ATMoviesDetailViewController,
             let detailNavigationController = detailViewController.navigationController ,  let spltViewController = self.splitViewController{
             detailViewController.movieSelected(viewModel : detailViewModel)
-            spltViewController.showDetailViewController(detailNavigationController, sender: nil)
+            spltViewController.showDetailViewController(detailNavigationController, sender: self)
+
         }
     }
 }
 
+//MARK: UISplitViewControllerDelegate
 extension ATMoviesListViewController : UISplitViewControllerDelegate {
     
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {

@@ -10,7 +10,7 @@ import UIKit
 
 class ATSplashViewController: UIViewController {
     
-    let viewmodel =  ATConfigurationViewModel()
+    private let viewmodel =  ATConfigurationViewModel()
     let segueID = "MoviesListControllerId"
 
     override func viewDidLoad() {
@@ -37,26 +37,12 @@ class ATSplashViewController: UIViewController {
             let detailViewController = rightNavController.topViewController as? ATMoviesDetailViewController
             else { return}
         
-        
         masterViewController.delegate = detailViewController
+        splitViewController.delegate = masterViewController
         detailViewController.navigationItem.leftItemsSupplementBackButton = true
         detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-
         
-        
-
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-    }
-
-
 }
 

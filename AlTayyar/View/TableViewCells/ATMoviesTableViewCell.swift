@@ -24,21 +24,18 @@ class ATMoviesTableViewCell: UITableViewCell {
     var viewModel = ATMovieListViewModel(movieIdentifier: "identifier")
     let collectionCellID = "MovieCollectionCellID"
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
     
     func setIdentifier(_ identifier : String) {
+        // Re-usable TableView Cell needs to fetch New movies
         collectionView.setContentOffset(CGPoint.init(x: 0, y: 0), animated: false)
         viewModel = ATMovieListViewModel(movieIdentifier: identifier)
         getMoreMovies()
     }
     
-    func getMoreMovies() {
+   private func getMoreMovies() {
         weak var weakSelf = self
         showLoading()
-        viewModel.fetchMovies { (success) in
+        viewModel.fetchMovies { () in
             if let strongSelf = weakSelf {
                 strongSelf.hideLoading()
                 strongSelf.collectionView.reloadData()
@@ -46,7 +43,7 @@ class ATMoviesTableViewCell: UITableViewCell {
         }
     }
     
-    func showLoading() {
+   private func showLoading() {
         if viewModel.isFirstPage {
             mainSpinner.isHidden = false
             mainSpinner.startAnimating()
@@ -57,17 +54,14 @@ class ATMoviesTableViewCell: UITableViewCell {
         }
     }
     
-    func hideLoading() {
+   private func hideLoading() {
         rightSpinner.isHidden = true
         mainSpinner.isHidden = true
 
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
 }
 
+// MARK: UICollectionViewDelegate UICollectionViewDataSource
 extension ATMoviesTableViewCell : UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -84,11 +78,14 @@ extension ATMoviesTableViewCell : UICollectionViewDelegate,UICollectionViewDataS
         return cell
     }
     
+    
+    // Check and Fetch next Page of Movies
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if viewModel.shouldLoadMoreMovies(indexPath: indexPath) {
             getMoreMovies()
         }
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.movieSelectedAtIndexPath(indexPath)

@@ -8,33 +8,35 @@
 
 import Foundation
 class ATAPPConfiguration {
+   
+    let apiKey = "114fe6670282f6a632638661e5e86dee"
+    let baseUrl = "https://api.themoviedb.org/3"
+
     
     static let shared = ATAPPConfiguration()
     private init() {}
 
-    let apiKey = "114fe6670282f6a632638661e5e86dee"
-    let baseUrl = "https://api.themoviedb.org/3"
     
     // Initiallizing with Default Values
-    var apiConfiguration = ATAPIConfiguration.init(baseUrl: "http://image.tmdb.org/t/p/", secureBaseURL: "https://image.tmdb.org/t/p/", posterSizes: ["original"], logoSizes: ["original"] , backdropSizes : ["w300"])
+    private var apiConfiguration = ATAPIConfiguration.init(baseUrl: "http://image.tmdb.org/t/p/", secureBaseURL: "https://image.tmdb.org/t/p/", posterSizes: ["original"], logoSizes: ["original"] , backdropSizes : ["w300"])
 
     
-    var logoSize : String {
+   private var logoSize : String {
         return apiConfiguration.logoSizes?.first ?? ""
     }
     
     // Pick the lightest image to download quickly
-    var backDropSizes : String {
+   private var backDropSizes : String {
         return apiConfiguration.backdropSizes?.first ?? ""
     }
     
     
     // Pick the lightest image to download quickly
-    var posterSize : String {
+    private var posterSize : String {
         return apiConfiguration.posterSizes?.first ?? ""
     }
 
-    var imageBaseUrl : String {
+   private var imageBaseUrl : String {
         return apiConfiguration.secureBaseURL ?? ""
     }
     

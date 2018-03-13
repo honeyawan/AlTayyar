@@ -10,20 +10,42 @@ import Foundation
 
 struct ATMovieEntity : Codable {
     
-    let poster_path : String?
-    let backdrop_path : String?
+    let posterPath : String?
+    let backdropPath : String?
     let overview : String?
-    let release_date : String?
-    let original_title : String?
-    let original_language : String?
+    let releaseDate : String?
+    let originalTitle : String?
+    let originalLanguage : String?
     let title : String?
     let popularity : Double?
-    let vote_count : Int?
+    let voteCount : Int?
     let adult : Bool?
     let video : Bool?
-    let vote_average : Double?
-    let genre_ids : [Int]?
-    let id : Int?
+    let voteAverage : Double?
+    let genreIds : [Int]?
+    let identifier : Int?
+    
+    
+    private enum CodingKeys : String , CodingKey {
+        
+        case posterPath = "poster_path"
+        case backdropPath = "backdrop_path"
+        case overview = "overview"
+        case releaseDate = "release_date"
+        case originalTitle = "original_title"
+        case originalLanguage = "original_language"
+        case title = "title"
+        case popularity = "popularity"
+        case voteCount = "vote_count"
+        case adult = "adult"
+        case video = "video"
+        case voteAverage = "vote_average"
+        case genreIds = "genre_ids"
+        case identifier = "id"
+        
+        
+    }
+
     
     
 }

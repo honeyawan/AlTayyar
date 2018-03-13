@@ -1,34 +1,41 @@
 //
-//  AlTayyarUITests.swift
-//  AlTayyarUITests
+//  ConfigurationViewModelTests.swift
+//  AlTayyarTests
 //
 //  Created by Haneef Habib on 3/12/18.
 //  Copyright © 2018 AlTayyar. All rights reserved.
 //
 
 import XCTest
+@testable import AlTayyar
 
 class ConfigurationViewModelTests: XCTestCase {
         
+    var configViewModel: ATConfigurationViewModel!
+    
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        configViewModel = ATConfigurationViewModel()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testGetConfiguration(){
+        
+       let expectation = XCTestExpectation.init(description: "wait For Config Response")
+        configViewModel.getConfiguration {
+            expectation.fulfill()
+        }
+        
+        self.waitForExpectations(timeout: 10) { (error) in
+            if(error != nil)
+            {
+                XCTFail("unable To Get Response from config API")
+            }
+
+        }
         
     }
     

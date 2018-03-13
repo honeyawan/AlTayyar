@@ -11,6 +11,7 @@ import Foundation
 import Alamofire
 
 
+// Private Sturcture to Parse Json with Codable
 private struct MoviesResponse : Codable {
     let total_results : Int?
     let total_pages : Int?

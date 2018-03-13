@@ -1,50 +1,48 @@
 //
-//  AlTayyarUITests.swift
-//  AlTayyarUITests
+//  MovieDetailViewModelTests.swift
+//  AlTayyarTests
 //
 //  Created by Haneef Habib on 3/12/18.
 //  Copyright © 2018 AlTayyar. All rights reserved.
 //
 
 import XCTest
+@testable import AlTayyar
 
 class MovieDetailViewModelTests: XCTestCase {
+    
+    var categoryViewModel: ATMovieDetailViewModel!
+
         
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
+        let movie = ATMovieEntity.init(posterPath: "somePosterPath.jpg", backdropPath: "somePosterPath.jpg", overview: "Test Movie", releaseDate: "10-08-12", originalTitle: "Test Movie", originalLanguage: "en", title: "Some Title", popularity: 7.5, voteCount: 999, adult: false, video: false, voteAverage: 7.5, genreIds: [1,2,3], identifier: 123)
+        categoryViewModel = ATMovieDetailViewModel(movie: movie)
+       }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     
     func testDescriptionForMovieDetail() {
-        
+        XCTAssertEqual(categoryViewModel.descriptionForMovieDetail, "Test Movie")
     }
     
     
     func testRatingsForMovieDetail() {
-        
+        XCTAssertEqual(categoryViewModel.titleForRating, "7.5 Ratings")
+
     }
     
     
     func testImageForMovieDetail() {
-        
+        XCTAssertTrue(categoryViewModel.imageForMovieDetail().contains("somePosterPath.jpg"))
     }
     
     func testTitleForMovieDetail() {
-        
+        XCTAssertEqual(categoryViewModel.titleForMovieDetail, "Some Title")
+
     }
 
     

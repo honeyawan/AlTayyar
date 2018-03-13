@@ -14,7 +14,7 @@
         <!--Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ATSplashViewController" customModule="AlTayyar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewControllerID" id="BYZ-38-t0r" customClass="ATSplashViewController" customModule="AlTayyar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
         <!--Movies Detail View Controller-->
         <scene sceneID="60N-gI-KE7">
             <objects>
-                <viewController id="abe-5h-AVL" customClass="ATMoviesDetailViewController" customModule="AlTayyar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoviesDetailViewControllerID" id="abe-5h-AVL" customClass="ATMoviesDetailViewController" customModule="AlTayyar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tfc-aG-qZP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="faE-iv-ZFq">
                                         <rect key="frame" x="0.0" y="220.5" width="375" height="382.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-z9-Qve">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-z9-Qve">
                                                 <rect key="frame" x="8" y="8" width="359" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="YMz-79-peQ"/>
@@ -79,7 +79,7 @@
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.0 Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXr-ds-DMS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXr-ds-DMS">
                                                 <rect key="frame" x="8" y="48" width="359" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="WAc-Pe-heb"/>
@@ -91,7 +91,7 @@
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                 </variation>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Movie OverView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BN8-WC-UY0">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BN8-WC-UY0">
                                                 <rect key="frame" x="8" y="88" width="359" height="286.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -109,12 +109,20 @@
                                     <constraint firstAttribute="trailing" secondItem="faE-iv-ZFq" secondAttribute="trailing" id="dzy-IR-IQ2"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecet a Movie from the List" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzf-dK-pGi">
+                                <rect key="frame" x="76" y="355.5" width="222" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ex8-ar-u6y" firstAttribute="top" secondItem="yHB-6I-m4g" secondAttribute="top" id="1AL-8y-nlJ"/>
                             <constraint firstItem="ex8-ar-u6y" firstAttribute="leading" secondItem="yHB-6I-m4g" secondAttribute="leading" id="2TU-mH-SCR"/>
+                            <constraint firstItem="Fzf-dK-pGi" firstAttribute="centerY" secondItem="yHB-6I-m4g" secondAttribute="centerY" id="4vJ-FQ-kC3"/>
                             <constraint firstItem="yHB-6I-m4g" firstAttribute="bottom" secondItem="ex8-ar-u6y" secondAttribute="bottom" id="SrN-ZA-deJ"/>
+                            <constraint firstItem="Fzf-dK-pGi" firstAttribute="centerX" secondItem="yHB-6I-m4g" secondAttribute="centerX" id="cul-qi-SxB"/>
                             <constraint firstItem="yHB-6I-m4g" firstAttribute="trailing" secondItem="ex8-ar-u6y" secondAttribute="trailing" id="xFP-gu-2uM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yHB-6I-m4g"/>
@@ -123,6 +131,7 @@
                     <connections>
                         <outlet property="imageView" destination="b35-5l-fUg" id="YWl-YM-NO3"/>
                         <outlet property="lblRatings" destination="UXr-ds-DMS" id="C0Y-Sh-Uny"/>
+                        <outlet property="lblSelectMovie" destination="Fzf-dK-pGi" id="Qij-54-VbU"/>
                         <outlet property="lblTitle" destination="nx5-z9-Qve" id="TTc-9R-xpB"/>
                         <outlet property="txtView" destination="BN8-WC-UY0" id="HJC-gR-ySo"/>
                     </connections>
@@ -134,11 +143,11 @@
         <!--MOVIE CATALOG-->
         <scene sceneID="ndH-rL-Dwe">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="keH-HW-Pkz" customClass="ATMoviesListViewController" customModule="AlTayyar" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MoviesListViewControllerID" clearsSelectionOnViewWillAppear="NO" id="keH-HW-Pkz" customClass="ATMoviesListViewController" customModule="AlTayyar" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7cq-SK-uDH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoviesTypeCellD" id="Cp5-Ku-Umw" customClass="ATMoviesTableViewCell" customModule="AlTayyar" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="200"/>
@@ -169,6 +178,7 @@
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJp-u0-ZQ4">
                                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                                                                        <color key="backgroundColor" red="0.69803921570000005" green="0.69803921570000005" blue="0.69803921570000005" alpha="0.59460616440000003" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </imageView>
                                                                 </subviews>
                                                             </view>
