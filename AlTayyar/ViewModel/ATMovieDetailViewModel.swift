@@ -15,13 +15,19 @@ struct ATMovieDetailViewModel {
         self.movie = movie
     }
     
+    
     func imageForMovieDetail() -> String {
-        return ATAPPConfiguration.shared.urlForMovieLogo(logoId: movie.backdrop_path ?? "")
+        return ATAPPConfiguration.shared.urlForMovieBackDrop(posterID: movie.backdrop_path ?? "")
     }
     
     var titleForMovieDetail : String {
         return movie.title ?? ""
     }
+    
+    var titleForRating : String {
+        return "\(ratings) Ratings"
+    }
+
     
     var descriptionForMovieDetail : String {
         return movie.overview ?? ""

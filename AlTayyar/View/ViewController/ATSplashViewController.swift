@@ -27,6 +27,26 @@ class ATSplashViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Setup SplitViewController
+        guard let splitViewController = segue.destination as? UISplitViewController,
+            let leftNavController = splitViewController.viewControllers.first as? UINavigationController,
+            let masterViewController = leftNavController.topViewController as? ATMoviesListViewController,
+            let rightNavController = splitViewController.viewControllers.last as? UINavigationController,
+            let detailViewController = rightNavController.topViewController as? ATMoviesDetailViewController
+            else { return}
+        
+        
+        masterViewController.delegate = detailViewController
+        detailViewController.navigationItem.leftItemsSupplementBackButton = true
+        detailViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
+
+        
+        
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

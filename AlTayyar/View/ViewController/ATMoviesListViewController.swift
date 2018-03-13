@@ -8,15 +8,19 @@
 
 import UIKit
 
+protocol MovieSelectionDelegate: class {
+    func movieSelected(viewModel: ATMovieDetailViewModel)
+}
+
 class ATMoviesListViewController: UITableViewController {
-    
-    
+        
     private let cellID = "MoviesTypeCellD"
     let moviesViewModel = ATMovieCategoryViewModel()
+    weak open var delegate: MovieSelectionDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.splitViewController!.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,22 +68,20 @@ extension ATMoviesListViewController  {
 }
 
 extension ATMoviesListViewController : ATMoviesTableViewCellDelegate {
-    func movieCellDidSelectedMovie() {
-//        self.splitViewController?.showDetailViewController(<#T##vc: UIViewController##UIViewController#>, sender: nil)
+    
+    func movieCellDidSelectedMovie(detailViewModel : ATMovieDetailViewModel) {
+        if let detailViewController = delegate as? ATMoviesDetailViewController,
+            let detailNavigationController = detailViewController.navigationController ,  let spltViewController = self.splitViewController{
+            detailViewController.movieSelected(viewModel : detailViewModel)
+            spltViewController.showDetailViewController(detailNavigationController, sender: nil)
+        }
     }
 }
 
 extension ATMoviesListViewController : UISplitViewControllerDelegate {
     
-    
-    func splitViewController(_ splitViewController: UISplitViewController, show vc: UIViewController, sender: Any?) -> Bool {
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         return true
     }
-    
-
-    func splitViewController(_ splitViewController: UISplitViewController, showDetail vc: UIViewController, sender: Any?) -> Bool {
-        return true
-    }
-
 }
 

@@ -10,12 +10,16 @@ import UIKit
 import AlamofireImage
 
 protocol ATMoviesTableViewCellDelegate {
-    func movieCellDidSelectedMovie()
+    func movieCellDidSelectedMovie(detailViewModel : ATMovieDetailViewModel)
 }
 
 class ATMoviesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var mainSpinner: UIActivityIndicatorView!
+    @IBOutlet weak var rightSpinner: UIActivityIndicatorView!
+
+
     var cellDelegate : ATMoviesTableViewCellDelegate?
     var viewModel = ATMovieListViewModel(movieIdentifier: "identifier")
     let collectionCellID = "MovieCollectionCellID"
@@ -33,11 +37,30 @@ class ATMoviesTableViewCell: UITableViewCell {
     
     func getMoreMovies() {
         weak var weakSelf = self
+        showLoading()
         viewModel.fetchMovies { (success) in
             if let strongSelf = weakSelf {
+                strongSelf.hideLoading()
                 strongSelf.collectionView.reloadData()
             }
         }
+    }
+    
+    func showLoading() {
+        if viewModel.isFirstPage {
+            mainSpinner.isHidden = false
+            mainSpinner.startAnimating()
+        }
+        else {
+            rightSpinner.isHidden = false
+            rightSpinner.startAnimating()
+        }
+    }
+    
+    func hideLoading() {
+        rightSpinner.isHidden = true
+        mainSpinner.isHidden = true
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -69,8 +92,8 @@ extension ATMoviesTableViewCell : UICollectionViewDelegate,UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         viewModel.movieSelectedAtIndexPath(indexPath)
-        if let delegate = cellDelegate {
-            delegate.movieCellDidSelectedMovie()
+        if let delegate = cellDelegate , let detailViewModel = viewModel.getDetailViewModelForSelectedMovie() {
+            delegate.movieCellDidSelectedMovie(detailViewModel: detailViewModel)
         }
     }
     

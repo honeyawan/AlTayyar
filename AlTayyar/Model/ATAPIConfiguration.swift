@@ -13,12 +13,15 @@ struct ATAPIConfiguration : Codable {
     let secureBaseURL : String?
     let posterSizes : [String]?
     let logoSizes : [String]?
+    let backdropSizes : [String]?
     
     private enum CodingKeys : String , CodingKey {
         case baseUrl = "base_url"
         case secureBaseURL = "secure_base_url"
         case posterSizes = "poster_sizes"
         case logoSizes = "logo_sizes"
+        case backdropSizes = "backdrop_sizes"
+
     }
 }
 

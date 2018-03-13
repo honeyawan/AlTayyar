@@ -16,12 +16,20 @@ class ATAPPConfiguration {
     let baseUrl = "https://api.themoviedb.org/3"
     
     // Initiallizing with Default Values
-    var apiConfiguration = ATAPIConfiguration.init(baseUrl: "http://image.tmdb.org/t/p/", secureBaseURL: "https://image.tmdb.org/t/p/", posterSizes: ["original"], logoSizes: ["original"])
+    var apiConfiguration = ATAPIConfiguration.init(baseUrl: "http://image.tmdb.org/t/p/", secureBaseURL: "https://image.tmdb.org/t/p/", posterSizes: ["original"], logoSizes: ["original"] , backdropSizes : ["w300"])
+
     
     var logoSize : String {
         return apiConfiguration.logoSizes?.first ?? ""
     }
     
+    // Pick the lightest image to download quickly
+    var backDropSizes : String {
+        return apiConfiguration.backdropSizes?.first ?? ""
+    }
+    
+    
+    // Pick the lightest image to download quickly
     var posterSize : String {
         return apiConfiguration.posterSizes?.first ?? ""
     }
@@ -30,12 +38,12 @@ class ATAPPConfiguration {
         return apiConfiguration.secureBaseURL ?? ""
     }
     
-    func urlForMovieLogo(logoId : String) -> String {
-        return "\(self.imageBaseUrl)\(self.posterSize)\(logoId)"
+    func urlForMoviePoster(posterPath : String) -> String {
+        return "\(self.imageBaseUrl)\(self.posterSize)\(posterPath)"
     }
     
-    func urlForMoviePoster(posterID : String) -> String {
-        return "\(self.imageBaseUrl)\(self.posterSize)\(posterID)"
+    func urlForMovieBackDrop(posterID : String) -> String {
+        return "\(self.imageBaseUrl)\(backDropSizes)\(posterID)"
     }
     
     func updateConfiguration(config : ATAPIConfiguration?) {

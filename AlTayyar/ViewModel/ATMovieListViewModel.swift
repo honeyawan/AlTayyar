@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ATMovieListViewModel {
+@objc class ATMovieListViewModel : NSObject{
     
     private var movies = [ATMovieEntity]()
     private let movieIdentifier : String
@@ -28,10 +28,23 @@ class ATMovieListViewModel {
         return movies.count
     }
     
+    var isFirstPage : Bool {
+        return page == 1
+    }
+    
     func movieSelectedAtIndexPath(_ indexPath : IndexPath) {
         selectedMovie = movies[indexPath.row]
     }
     
+    func getDetailViewModelForSelectedMovie() -> ATMovieDetailViewModel? {
+        
+        if let movie = selectedMovie {
+            return ATMovieDetailViewModel(movie: movie)
+        }
+        
+        return nil
+        
+    }
     
     func shouldLoadMoreMovies(indexPath : IndexPath)-> Bool {
         return ((numberOfMovies() - 6) == indexPath.row  && canLoadMore && !isLoadingData)
@@ -40,7 +53,7 @@ class ATMovieListViewModel {
     func imageForMovieAtIndexPath(indexPath : IndexPath) -> String {
         if indexPath.count < movies.count {
             let movie = movies[indexPath.row]
-            return ATAPPConfiguration.shared.urlForMovieLogo(logoId: movie.poster_path ?? "")
+            return ATAPPConfiguration.shared.urlForMoviePoster(posterPath: movie.poster_path ?? "")
         }
         return ""
     }
